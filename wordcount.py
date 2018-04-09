@@ -37,7 +37,7 @@
     
 # iterating_dict("twain.txt")
 
-
+import sys
 from collections import Counter
 
 def word_count(filename):
@@ -57,5 +57,5 @@ def iterating_dict(filename):
     for word, count in counts_words.iteritems():
         print word, count
     
-iterating_dict("twain.txt")
+iterating_dict(sys.argv[1])
 
